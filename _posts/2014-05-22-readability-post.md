@@ -1,45 +1,134 @@
 ---
 layout: post
-title: "Testing Readability with a Bunch of Text"
-tags: [sample post, readability, test, intro]
+title: "네트워크"
+date: 2019-10-12
+tags: [CS, 네트워크]
 comments: true
 ---
 
-A ton of text to test readability.
+## GET/POST 방식
 
-Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. Pinterest literally occupy Schlitz forage. Odio ad blue bottle vinyl, 90's narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney's. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.
+----
 
-Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.
 
-## Cupidatat 90's lo-fi authentic try-hard
+ 둘다 HTTP 프로토콜을 이용해서 서버에 무엇인가 요청할 때 사용하는 방식이다.  
+<br>
 
-In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. Terry Richardson shabby chic +1, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90's.
+ GET | POST
+----------- | -----------
+- URL에 변수(데이터)를 포함시켜 요청한다. <br>- 데이터를 *Header*(헤더)에 포함하여 전송한다.<br>- URL에 데이터가 노출되어 보안에 취약하다.<br>- 전송하는 길이에 제한이 있다.<br>- 캐싱할 수 있다. | -URL에 변수(데이터)를 노출하지 않고 요청한다.<br>- 데이터를 *Body*(바디)에 포함시킨다. <br>- URL에 데이터가 노출되지 않아서 기본 보안은 되어있다.<br>- 전송하는 길이에 제한이 없다. <br>- 캐싱할 수 없다.
 
-* Sartorial hoodie
-* Labore viral forage
-* Tote bag selvage
-* DIY exercitation et id ugh tumblr church-key
 
-Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical. Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade leggings yr.
+* GET 은 가져오는 것이다. 서버에서 어떤 데이터를 가져와서 보여준다거나 하는 용도이지 서버의 값이나 상태 등을 변경하지 않는다. `SELECT` 적인 성향을 갖고 있다고 볼 수 있는 것이다.
+* POST 는 서버의 값이나 상태를 변경하기 위해서 또는 추가하기 위해서 사용된다.
 
-Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex, scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably haven't heard of them eu non, Odd Future Truffaut pug keytar meggings McSweeney's Pinterest cred. Etsy literally aute esse, eu bicycle rights qui meggings fanny pack. Gentrify leggings pug flannel duis.
+> - *Cashing*(캐싱)이란?
+>
+>캐싱이란 한번 접근 후, 또 요청할시 빠르게 접근하기 위해 레지스터에 데이터를 저장시켜 놓는 것입니다.
 
-## Forage occaecat cardigan qui
+<br>
+<br>
 
-Fashion axe hella gastropub lo-fi kogi 90's aliquip +1 veniam delectus tousled. Cred sriracha locavore gastropub kale chips, iPhone mollit sartorial. Anim dolore 8-bit, pork belly dolor photo booth aute flannel small batch. Dolor disrupt ennui, tattooed whatever salvia Banksy sartorial roof party selfies raw denim sint meh pour-over. Ennui eu cardigan sint, gentrify iPhone cornhole.
 
-> Whatever velit occaecat quis deserunt gastropub, leggings elit tousled roof party 3 wolf moon kogi pug blue bottle ea. Fashion axe shabby chic Austin quinoa pickled laborum bitters next level, disrupt deep v accusamus non fingerstache.
+## TCP와 UDP의 비교
 
-Tote bag asymmetrical elit sunt. Occaecat authentic Marfa, hella McSweeney's next level irure veniam master cleanse. Sed hoodie letterpress artisan wolf leggings, 3 wolf moon commodo ullamco. Anim occupy ea labore Terry Richardson. Tofu ex master cleanse in whatever pitchfork banh mi, occupy fugiat fanny pack Austin authentic. Magna fugiat 3 wolf moon, labore McSweeney's sustainable vero consectetur. Gluten-free disrupt enim, aesthetic fugiat jean shorts trust fund keffiyeh magna try-hard.
+----
 
-## Hoodie Duis
+네트워크의 계층들 중 전송 계층에서 사용하는 프로토콜이 있다.
+**전송계층** 은 **송신자와 수신자를 연결하는 통신서비스를 제공하는 계층** 으로, 쉽게 말해 데이터의 전달을 담당한다.
+그리고 데이터를 보내기 위해 사용하는 프로토콜이 있는데, 그 프로콜들이 `TCP`와 `UDP`이다.
 
-Actually salvia consectetur, hoodie duis lomo YOLO sunt sriracha. Aute pop-up brunch farm-to-table odio, salvia irure occaecat. Sriracha small batch literally skateboard. Echo Park nihil hoodie, aliquip forage artisan laboris. Trust fund reprehenderit nulla locavore. Stumptown raw denim kitsch, keffiyeh nulla twee dreamcatcher fanny pack ullamco 90's pop-up est culpa farm-to-table. Selfies 8-bit do pug odio.
+<br>
+### TCP
 
-### Thundercats Ho!
+`(Transmission Control Protocol, 전송제어 프로토콜)`
+- 인터넷상에서 데이터를 메세지의 형태로 보내기 위해 IP와 함께 사용하는 프로토콜
 
-Fingerstache thundercats Williamsburg, deep v scenester Banksy ennui vinyl selfies mollit biodiesel duis odio pop-up. Banksy 3 wolf moon try-hard, sapiente enim stumptown deep v ad letterpress. Squid beard brunch, exercitation raw denim yr sint direct trade. Raw denim narwhal id, flannel DIY McSweeney's seitan. Letterpress artisan bespoke accusamus, meggings laboris consequat Truffaut qui in seitan. Sustainable cornhole Schlitz, twee Cosby sweater banh mi deep v forage letterpress flannel whatever keffiyeh. Sartorial cred irure, semiotics ethical sed blue bottle nihil letterpress.
+일반적으로 TCP와 IP를 함께 사용하는데, IP가 데이터의 배달을 처리한다면 TCP는 *패킷* 을 추적 및 관리하게 된다.
+TCP는 `연결형 서비스`를 지원하는 프로토콜로 인터넷 환경에서 기본으로 사용한다.
 
-Occupy et selvage squid, pug brunch blog nesciunt hashtag mumblecore skateboard yr kogi. Ugh small batch swag four loko. Fap post-ironic qui tote bag farm-to-table american apparel scenester keffiyeh vero, swag non pour-over gentrify authentic pitchfork. Schlitz scenester lo-fi voluptate, tote bag irony bicycle rights pariatur vero Vice freegan wayfarers exercitation nisi shoreditch. Chambray tofu vero sed. Street art swag literally leggings, Cosby sweater mixtape PBR lomo Banksy non in pitchfork ennui McSweeney's selfies. Odd Future Banksy non authentic.
+> - *패킷* 이란?<br>
+인터넷 내에서 데이터를 보내기 위한 경로배정(라우팅)을 효율적으로 하기 위해서 데이터를 여러 개의 조각들로 나누어 전송을 하는데 이때, 이 조각을 패킷이라고 한다.
+연결형 서비스로 가상 회선 방식을 제공한다.
 
-Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.
+<br>
+
+### TCP 특징
+
+- 3-way handshaking과정을 통해 연결을 설정하고 4-way handshaking을 통해 해제한다
+- 흐름 제어 및 혼잡 제어
+- 높은 신뢰성을 보장한다
+- UDP보다 속도가 느리다
+- 전이중(Full-Duplex), 점대점(Point to Point) 방식
+<br>
+
+TCP가 가상 회선 방식을 제공한다는 것은 발신지와 수신지를 연결하여 패킷을 전송하기 위한 논리적 경로를 배정한다는 말이다.
+
+그리고 3-way handshaking과정은 목적지와 수신지를 확실히 하여 정확한 전송을 보장하기 위해서 세션을 수립하는 과정을 의미한다. TCP가 이러한 특징을 지니는 이유는 간단명료하다.
+
+바로 TCP는 연결형 서비스로 신뢰성을 보장하기 때문이다. 그래서 3-way handshaking의 과정도 사용하는 것이고, 데이터의 흐름제어나 혼잡 제어와 같은 기능도 한다. 하지만 이러한 기능때문에 UDP보다 속도가 느리다.
+
+(이러한 기능은 CPU를 사용하기 때문에 속도에 영향을 주는 것입니다.)
+
+그렇기에 TCP는 연속성보다 **신뢰성있는 전송** 이 중요할 때에 사용하는 프로토콜입니다!
+<br>
+
+### TCP 서버의 특징
+- 서버소켓은 연결만을 담당한다.
+- 연결과정에서 반환된 클라이언트 소켓은 데이터의 송수신에 사용된다형 서비스로 가상 회선 방식을 제공한다.
+- 서버와 클라이언트는 1대1로 연결된다.
+- 스트림 전송으로 전송 데이터의 크기가 무제한이다.
+- 패킷에 대한 응답을 해야하기 때문에(시간 지연, CPU 소모) 성능이 낮다.
+- Streaming 서비스에 불리하다.(손실된 경우 재전송 요청을 하므로)
+
+### UDP
+`UDP(User Datagram Protocol), 사용자 데이터그램 프로토콜)`
+
+- 데이터를 데이터그램 단위로 처리하는 프로토콜
+
+데이터그램이란 독립적인 관계를 지니는 패킷이라는 뜻으로, UDP의 동작방식을 설명하자면 다음과 같다.
+
+TCP와 달리 UDP는 `비연결형 프로토콜`이다. 즉, 연결을 위해 할당되는 논리적인 경로가 없는데,
+그렇기 때문에 각각의 패킷은 다른 경로로 전송되고, 각각의 패킷은 독립적인 관계를 지니게 되는데 이렇게 **데이터를 서로 다른 경로로 독립적으로 처리** 하게 되고, 이러한 프로토콜을 `UDP`라고 합니다.
+
+### UDP 특징
+- 비연결형 서비스로 데이터그램 방식을 제공한다
+- 정보를 주고 받을 때 정보를 보내거나 받는다는 신호절차를 거치지 않는다.
+- UDP헤더의 CheckSum 필드를 통해 최소한의 오류만 검출한다.
+- 신뢰성이 낮다
+- TCP보다 속도가 빠르다
+
+신뢰성보다는 **연속성이 중요한 서비스** 예를 들면 *실시간 서비스(streaming)* 에 자주 사용됩니다.
+
+### UDP 서버의 특징
+- UDP에는 연결 자체가 없어서(connect 함수 불필요) 서버 소켓과 클라이언트 소켓의 구분이 없다.
+- 소켓 대신 IP를 기반으로 데이터를 전송한다.
+- 서버와 클라이언트는 1대1, 1대N, N대M 등으로 연결될 수 있다.
+
+- 데이터그램(메세지) 단위로 전송되며 그 크기는 65535바이트로, 크기가 초과하면 잘라서 보낸다.
+
+- 흐름제어(flow control)가 없어서 패킷이 제대로 전송되었는지, 오류가 없는지 확인할 수 없다.
+
+- 파일 전송과 같은 신뢰성이 필요한 서비스보다 성능이 중요시 되는 경우에 사용된다.
+
+> - *흐름제어(Flow Control)* 와 *혼잡제어(Congestion Control)* 란?<br>
+흐름제어는 데이터를 송신하는 곳과 수신하는 곳의 데이터 처리 속도를 조절하여 수신자의 버퍼 오버플로우를 방지하는 것입니다. 예를 들어 송신하는 곳에서 감당이 안되게 데이터를 빠르게 많이 보내면 수신자에서 문제가 발생하기 때문입니다.
+혼잡제어는 네트워크 내의 패킷 수가 넘치게 증가하지 않도록 방지하는 것입니다. 만약 정보의 소통량이 과다하면
+패킷을 조금만 전송하여 혼잡 붕괴 현상이 일어나는 것을 막습니다.
+
+
+<br>
+### TCP UDP 비교
+
+프로토콜 종류|TCP|UDP
+-----|-----|-----
+연결방식|연결형 서비스|비연결형 서비스
+패킷 교환 방식|가상 회선 방식|데이터그램 방식
+전송 순서|전송 순서 보장|전송 순서가 바뀔 수 있음
+수신 여부 확인|수신 여부 확인|수신 여부 확인하지 않음
+통신 방식|1:1 통신|1:1 or 1:N or N:N 통신
+신뢰성|높다|낮다
+속도|느리다|빠르다
+
+
+출처 |  https://mangkyu.tistory.com/15
