@@ -21,8 +21,8 @@ avatar: https://github.com/bo0216/bo0216.github.io/blob/master/images/photo.png?
 navigation:
   - name: Blog
     url: /
-  # name: About
-  #  url: /about
+  - name: About
+    url: /about
   - name: Archive
     url: /archive
   - name: Tags
